@@ -1,5 +1,5 @@
-# Fourth exam form "John bryce" college
-## Angular, Node.js+express, MongoDB 
+# Event Management Project
+## Fourth exam form "John bryce" college based on: Angular, Node.js+express, MongoDB 
 
 ### Project requirements:
 ##### MongoDB version: v6.0 - or - MongoDB compass v1.35.0
