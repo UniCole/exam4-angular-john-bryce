@@ -28,5 +28,10 @@ npm i
 npm start
 ```
 #### **Both processes should run simultaniusly (Detached, or separate terminals for debug purposes)**
+###   ________________________________________________________________
+
+### The project will run automatically on npm start
+OR
+Go to: http://localhost/
 
 ## Enjoy!
