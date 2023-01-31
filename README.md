@@ -28,7 +28,7 @@ npm i
 npm start
 ```
 #### **Both processes should run simultaniusly (Detached, or separate terminals for debug purposes)**
-_
+___
 
 The project will run automatically on npm start
 OR
