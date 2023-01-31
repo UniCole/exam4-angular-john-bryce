@@ -1,5 +1,5 @@
 # exam4-angular-john-bryce
-### Angular, Node.js+express, MongoDB 
+## Angular, Node.js+express, MongoDB 
 
 ### Project requirements:
 ##### MongoDB version: v6.0 - or - MongoDB compass v1.35.0
@@ -27,6 +27,6 @@ npm start
 npm i
 npm start
 ```
-### **Both processes should run simultaniusly (Detached, or separate terminals for debug purposes)**
+#### **Both processes should run simultaniusly (Detached, or separate terminals for debug purposes)**
 
 ## Enjoy!
