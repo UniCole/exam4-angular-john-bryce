@@ -32,6 +32,6 @@ npm start
 
 ### The project will run automatically on npm start
 OR
-Go to: http://localhost/
+Go to: http://localhost:4200/
 
 ## Enjoy!
