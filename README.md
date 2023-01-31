@@ -1,4 +1,4 @@
-# exam4-angular-john-bryce
+# Fourth exam form "John bryce" college
 ## Angular, Node.js+express, MongoDB 
 
 ### Project requirements:
