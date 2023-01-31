@@ -1,0 +1,38 @@
+<div>
+<!-- <h3>Here you can watch all the event by selecting there type</h3> -->
+<!-- <label>Select type of the event:</label> <br> -->
+    <select (change)="displayEvents($event)">
+        <option selected disabled value="">Select event type</option>
+        <option *ngFor="let t of eventTypes" value={{t._id}}>{{t.eventName}}</option>
+    </select>
+
+    <table *ngIf="events?.length">
+        <thead>
+            <tr>
+
+                <th>Event type</th>
+                <th>Date & Time</th>
+                <th>Description</th>
+                <th>Address</th>
+                <th>Guest amount</th>
+                <th>Event passed</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of events">
+                <td>{{e.eventTypes.eventName}}</td>
+                <td>{{e.dateTime | date:"dd/MM/yyyy HH:mm"}}</td>
+                <td>{{e.description}}</td>
+                <td>{{e.address}}</td>
+                <td>{{e.guestAmount}}</td>
+                <td>{{e.dateTime < today? "Yes" : "No"}} </td>
+                <td>
+                    <button (click)="deleteMe(e._id)"><img src="../../../../assets/images/bin.png"
+                            class="bin" /></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

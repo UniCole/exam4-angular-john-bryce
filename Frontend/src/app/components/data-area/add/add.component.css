@@ -1,0 +1,82 @@
+form {
+    width: 300px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px #a940ee5b;
+}
+
+select,
+input,
+button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.err {
+    position: absolute;
+    color: rgba(255, 183, 183, 0.851);
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+/* .ng-touched.ng-invalid:not(form) { */
+form>.ng-touched.ng-invalid {
+    background-color: rgba(247, 220, 225, 0.236);
+    border: 2px solid rgba(255, 183, 183, 0.851);
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(360deg, rgb(77, 61, 150), rgb(208, 146, 208));
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0.4em 1.3em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #de5bea6f;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(140, 72, 199, 0.059);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(173, 68, 218, 0);
+    }
+}
+
+input ,select {
+    color: rgb(190, 151, 226);
+    border: 2px solid rgb(108, 61, 150);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    font-size: 14px;
+    font-family: Segoe UI Semibold;
+}
+
+input:active {
+    box-shadow: 2px 2px 15px#de5bea6f inset;
+}
+select:active {
+    box-shadow: 2px 2px 15px #de5bea6f inset;
+}

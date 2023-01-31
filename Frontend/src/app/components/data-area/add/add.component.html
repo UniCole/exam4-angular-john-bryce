@@ -1,0 +1,40 @@
+<div>
+
+    <form (ngSubmit)="send()" ngNativeValidate #assignmentForm="ngForm">
+
+        <label>Event type: </label>
+        <select name="eventTypeId" [(ngModel)]="event.eventTypeId" #eventTypeIdBox="ngModel" required>
+            <option selected disabled value="">Select event type</option>
+            <option *ngFor="let e of eventTypes" value={{e._id}}>{{e.eventName}}</option>
+        </select>
+        <span class="err" *ngIf="eventTypeIdBox.errors?.['required'] && eventTypeIdBox.touched">Missing event type</span>
+
+        <label>Date & Time:</label>
+        <input type="datetime-local" name="dateTime" [(ngModel)]="event.dateTime" #dateTimeBox="ngModel" required >
+        <span class="err" *ngIf="dateTimeBox.errors?.['required'] && dateTimeBox.touched">Missing date and time</span>
+
+        <label>Description:</label>
+        <input type="text" name="description" [(ngModel)]="event.description" #descriptionBox="ngModel" required
+        minlength="2" maxlength="100">
+        <span class="err" *ngIf="descriptionBox.errors?.['required'] && descriptionBox.touched">Missing description</span>
+        <span class="err" *ngIf="descriptionBox.errors?.['minlength'] && descriptionBox.touched">Description cannot be less then 2 charts</span>
+        <span class="err" *ngIf="descriptionBox.errors?.['maxlength'] && descriptionBox.touched">Description cant exceed 100 charts</span>
+        
+        <label>Address:</label>
+        <input type="text" name="address" [(ngModel)]="event.address" #addressBox="ngModel" required
+        minlength="2" maxlength="100">
+        <span class="err" *ngIf="addressBox.errors?.['required'] && addressBox.touched">Missing address</span>
+        <span class="err" *ngIf="addressBox.errors?.['minlength'] && addressBox.touched">address cannot be less then 2 charts</span>
+        <span class="err" *ngIf="addressBox.errors?.['maxlength'] && addressBox.touched">address cant exceed 100 charts</span>
+        
+        <label>Guest amount:</label>
+        <input type="number" name="guestAmount" [(ngModel)]="event.guestAmount" #guestAmountBox="ngModel" required min="5" max="1000">
+        <span class="err" *ngIf="guestAmountBox.errors?.['required'] && guestAmountBox.touched">Missing amount of guests</span>
+        <span class="err" *ngIf="guestAmountBox.errors?.['min'] && guestAmountBox.touched">The amount of guests cannot be less than 5</span>
+        <span class="err" *ngIf="guestAmountBox.errors?.['max'] && guestAmountBox.touched">The amount of guests cannot be greater than 1000</span>
+
+        <button [disabled]="assignmentForm.invalid">Add</button>
+
+    </form>
+
+</div>

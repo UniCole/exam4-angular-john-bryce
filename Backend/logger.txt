@@ -1,0 +1,28 @@
+1/10/2023, 6:30:59 PM 	 Cast to ObjectId failed for value ":63bd894eeae4c11eaa8d5444" (type string) at path "eventTypeId" for model "EventModel"
+----------------------------
+1/10/2023, 6:34:14 PM 	 EventModel validation failed: guestAmount: Missing amount of guests, address: Missing address, description: Missing description, date: Missing date
+----------------------------
+1/10/2023, 6:37:09 PM 	 EventModel validation failed: address: Missing address, description: Missing description, date: Missing date
+----------------------------
+1/10/2023, 6:37:21 PM 	 EventModel validation failed: address: Missing address, description: Missing description, date: Missing date
+----------------------------
+1/10/2023, 6:53:14 PM 	 Cast to ObjectId failed for value "birthday" (type string) at path "eventTypeId" for model "EventModel"
+----------------------------
+1/10/2023, 7:05:17 PM 	 EventModel validation failed: address: Missing address
+----------------------------
+1/10/2023, 7:05:23 PM 	 EventModel validation failed: address: Address cannot be less then 5 charts
+----------------------------
+1/10/2023, 8:14:19 PM 	 Route /api/event/63bd98757d71eadb34f7d712 not exist
+----------------------------
+1/10/2023, 8:14:25 PM 	 Route /api/event/63bd98757d71eadb34f7d712 not exist
+----------------------------
+1/10/2023, 8:15:09 PM 	 Route /api/event/63bda647a3d2cc0c59a4b4c2 not exist
+----------------------------
+1/10/2023, 8:19:36 PM 	 Route /api/event/63bda647a3d2cc0c59a4b4c2 not exist
+----------------------------
+1/10/2023, 8:20:57 PM 	 Route /api/event/63bdac84a3d2cc0c59a4b4f8 not exist
+----------------------------
+1/10/2023, 8:23:09 PM 	 Route /api/event/63bdac84a3d2cc0c59a4b4f8 not exist
+----------------------------
+1/12/2023, 1:04:31 PM 	 EventModel validation failed: address: Address cannot be less then 2 charts
+----------------------------

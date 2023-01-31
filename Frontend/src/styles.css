@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    text-align: center;
+    font-size: large;
+    color: white;
+    background-image: linear-gradient(black, rgb(37, 26, 56), rgb(72, 61, 120), rgb(191, 110, 191));
+    font-family: Segoe UI Variable Small Light;
+}
+
+a {
+    color: rgb(114, 78, 154);
+    font-family: Segoe UI Semibold;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(182, 98, 182);
+    /* font-size: 19px; */
+}
+
+

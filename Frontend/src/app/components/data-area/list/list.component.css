@@ -1,0 +1,38 @@
+table {
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px #a940ee5b;
+}
+
+table,
+th,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 5px;
+    
+}
+
+.bin {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+select {
+    color: #8052ab;
+    border: 2px solid rgb(108, 61, 150);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    font-size: 16px;
+    font-family: Segoe UI Semibold;
+}
+
+select:active {
+    box-shadow: 2px 2px 15px #de5bea6f inset;
+}
